@@ -1,5 +1,5 @@
-// const myContainer = document.querySelector("#container");
-// myContainer.textContent = "Hi Lin";
+// const myContainer = document.querySelector('#container');
+// myContainer.textContent = 'Hi Lin';
 
 import initialBone from "./init-bone";
 import initialHome from "./init-home";
@@ -15,3 +15,6 @@ const myBody = document.querySelector("body");
 const elMain = elBone.querySelector("main");
 elMain.append(elHome);
 myBody.append(elBone);
+const homeNav = document.querySelector(".nav-item");
+homeNav.classList.add("active");
+//
