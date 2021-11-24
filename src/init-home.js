@@ -1,5 +1,6 @@
 const initialHome = () => {
   const elHome = document.createElement("div");
+  elHome.classList.add("main-home");
   const introArticle = document.createElement("article");
   const introTitle = document.createElement("h3");
   introTitle.textContent =
