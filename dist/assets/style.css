@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* header part */
@@ -71,13 +72,46 @@ nav {
 }
 
 /* main part */
+@media screen and (max-width: 767px) {
+  main {
+    width: 100% !important;
+    padding: 3.3vmax 6vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 75%;
+  }
+}
+
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.3vmax 3vw;
+}
+
+/* home part */
+main h3 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+main p {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.iframe-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* footer part */
 footer {
   background-image: url(./images/pizza-bg.jpg);
+  width: 100%;
 }
 
 footer > p {
