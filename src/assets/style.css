@@ -20,15 +20,17 @@ body {
 
 /* container part */
 .container {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 /* header part */
 header {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
   width: 100%;
   color: #ff671b;
   background-image: url(./images/pizza-bg.jpg);
@@ -53,17 +55,24 @@ nav {
   transition: transform 0.3s;
 }
 
-.nav-item.active {
-  border-bottom: 2px solid #ff671b;
+.nav-item:hover {
+  /* transform: translateY(-10%); */
+  transform: scaleX(1.1);
 }
 
-.nav-item:hover {
-  transform: translateY(-10%);
+.nav-item-link.active {
+  border-bottom: 2px solid #ff671b;
 }
 
 .nav-item-link {
   padding: 2rem;
   font-size: 2rem;
+  display: inline-block;
+}
+
+/* main part */
+main {
+  flex: 1;
 }
 
 /* footer part */

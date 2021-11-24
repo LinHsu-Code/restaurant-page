@@ -6,7 +6,6 @@ const initialBone = () => {
   elContainer.classList.add("container");
   const elHeader = initialHeader();
   const elMain = document.createElement("main");
-  elMain.textContent = `I'm the main`;
   const elFooter = initialFooter();
   elContainer.append(elHeader, elMain, elFooter);
   return elContainer;
