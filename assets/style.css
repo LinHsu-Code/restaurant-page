@@ -85,7 +85,7 @@ nav {
   }
 }
 
-main {
+.main-home {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -94,18 +94,38 @@ main {
 }
 
 /* home part */
-main h3 {
+.main-home h3 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 2rem;
 }
-main p {
+.main-home p {
   font-size: 2rem;
   margin: 2rem 0;
 }
 .iframe-wrapper {
   display: flex;
   justify-content: space-around;
+}
+
+/* menu part */
+.main-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 40px;
+}
+
+.main-menu img {
+  width: 100%;
+}
+
+.main-menu h3 {
+  text-align: center;
+}
+
+.main-menu p {
+  text-align: center;
 }
 
 /* footer part */
