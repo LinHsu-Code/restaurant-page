@@ -11,7 +11,6 @@ const addClickListenerToNavTabs = () => {
       const isActive = ev.target.classList.contains("active");
       const mainSection = document.querySelector("main");
       if (isActive !== -1) {
-        console.log(arr);
         arr.forEach((el) => el.classList.remove("active"));
         ev.target.classList.add("active");
         let activeModul;

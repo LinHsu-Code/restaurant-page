@@ -40,7 +40,8 @@ header {
 h1 {
   margin-bottom: 1rem;
   font-family: "Pacifico", cursive;
-  font-size: 10rem;
+  font-size: calc(1.5rem + 6vw);
+
   text-align: center;
 }
 
@@ -75,7 +76,6 @@ nav {
 @media screen and (max-width: 767px) {
   main {
     width: 100% !important;
-    padding: 3.3vmax 6vw;
   }
 }
 
@@ -85,12 +85,15 @@ nav {
   }
 }
 
+main {
+  padding: 3.3vmax 6vw;
+}
+
 .main-home {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.3vmax 3vw;
 }
 
 /* home part */
@@ -126,6 +129,14 @@ nav {
 
 .main-menu p {
   text-align: center;
+}
+
+/* contact part */
+.main-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
 }
 
 /* footer part */

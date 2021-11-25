@@ -3,14 +3,14 @@ const initialMenu = () => {
   elMenu.classList.add("main-menu");
   const menulist = [
     {
-      name: "Promos",
-      introText: "Deep!Deep! Dish Bundle",
-      imageSrc: "./assets/images/FestiveFeastBundle.png",
-    },
-    {
       name: "Combos",
       introText: "Bundle meals for different group sizes and occasions.",
       imageSrc: "./assets/images/Holiday-Treat.png",
+    },
+    {
+      name: "Promos",
+      introText: "Deep!Deep! Dish Bundle",
+      imageSrc: "./assets/images/FestiveFeastBundle.png",
     },
     {
       name: "Pizzas",
